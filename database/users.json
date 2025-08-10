@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Dakota Wrigley",
+    "role": "Developer",
+    "skills": ["Python", "JavaScript", "MongoDB"],
+    "experience_years": 3,
+    "location": "Indiana",
+    "available_for_remote": true
+  },
+  {
+    "name": "Sarah Mitchell",
+    "role": "Project Manager",
+    "skills": ["Agile", "Scrum", "Communication"],
+    "experience_years": 6,
+    "location": "New York",
+    "available_for_remote": false
+  },
+  {
+    "name": "John Doe",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "Data Visualization"],
+    "experience_years": 4,
+    "location": "California",
+    "available_for_remote": true
+  },
+  {
+    "name": "Emily Carter",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "Sketch", "User Research"],
+    "experience_years": 5,
+    "location": "Florida",
+    "available_for_remote": true
+  },
+  {
+    "name": "Michael Thompson",
+    "role": "Backend Engineer",
+    "skills": ["Node.js", "Express", "PostgreSQL"],
+    "experience_years": 7,
+    "location": "Texas",
+    "available_for_remote": false
+  }
+]
