@@ -1,15 +1,21 @@
-const express = require("express") // allows us to make a backend server
-const app = express() // activate this app variable to be an express server
-const router = express.Router()
-var cors = require("cors")
-const Client = require("./clients")
-app.use(cors()) // allows to use cors system to connect backend & frontend
-app.use(bodyParser.json())
-const secret = "supersecret"
+require('dotenv').config(); // need to load env first..
 
-app.listen(3000,function(){ // start the web server.. app.listen(portnumber, function)
-    console.log("Listening on port 3000")
-})
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const Client = require("./clients");
+const router = express.Router();
+const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+
+require("./database"); // MongoDB should see the process now
+
+
+//app.listen(3000,function(){ // start the web server.. app.listen(portnumber, function)
+  //  console.log("Listening on port 3000")
+//})
 
 router.get("/clients", async(req,res) =>{
   try{

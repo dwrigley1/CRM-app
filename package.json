@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/dwrigley1/CRM-app#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
+    "mongoose": "^7.0.0",
     "nodemon": "^3.1.10"
   }
 }
