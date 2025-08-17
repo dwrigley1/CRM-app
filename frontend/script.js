@@ -3,14 +3,14 @@
 
 addEventListener("DOMContentLoaded", async function() {
     
-    const response = await fetch("https://crm-app-zfvz.onrender.com/api/clients/")
+    const response = await fetch("https://crm-app-zfvz.onrender.com/api/clients")
 
     const clients = await response.json();
 
     let html = ""; // blank screen
     for (let client of clients) {
         let clientID = client._id
-        html+=`<li>${clientID}</li>`
+        html+=`<li>${clientID} - ${client.name}</li>`
     }
 
     document.querySelector("#list_of_clients").innerHTML = html;
