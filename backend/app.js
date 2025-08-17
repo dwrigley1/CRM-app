@@ -19,7 +19,7 @@ require("./database"); // MongoDB should see the process now
 
 router.get("/clients", async(req,res) =>{
   try{
-    const clients = await Client.find({}) // try to find a song, when found, await
+    const clients = await Client.find({}) 
     res.send(clients)
     console.log(clients)
   }

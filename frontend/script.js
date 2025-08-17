@@ -10,7 +10,7 @@ addEventListener("DOMContentLoaded", async function() {
     let html = ""; // blank screen
     for (let client of clients) {
         let clientID = client._id
-        html+=`<li>${clientID} - ${client.name}</li>`
+        html+=`<li>${clientID} - ${client.result}</li>`
     }
 
     document.querySelector("#list_of_clients").innerHTML = html;
