@@ -13,9 +13,9 @@ app.use(bodyParser.json());
 require("./database"); // MongoDB should see the process now
 
 
-app.listen(3000,function(){ // start the web server.. app.listen(portnumber, function)
-    console.log("Listening on port 3000")
-})
+///app.listen(3000,function(){ // start the web server.. app.listen(portnumber, function)
+   // console.log("Listening on port 3000")
+//})
 
 router.get("/clients", async(req,res) =>{
   try{
@@ -31,8 +31,8 @@ router.get("/clients", async(req,res) =>{
 // requests that use an API usually start with /api
 app.use("/api", router)
 
-/** 
+ 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(` Server running on port ${PORT}`);
-});**/
+});
