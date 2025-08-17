@@ -3,7 +3,7 @@
 
 addEventListener("DOMContentLoaded", async function() {
     
-    const response = await fetch("https://backend-yjzl.onrender.com/api/songs/") // keep local
+    const response = await fetch("https://crm-app-zfvz.onrender.com")
 
     const clients = await response.json();
 
