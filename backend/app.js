@@ -34,7 +34,7 @@ router.get("/clients", async(req,res) =>{
 // get client by id
 router.get("/clients/:id", async (req, res) => {
   try {
-    const client = await Song.findById(req.params.id);
+    const client = await Client.findById(req.params.id);
     if (!client) {
       return res.status(404).send("Client not found");
     }
@@ -49,7 +49,7 @@ router.get("/clients/:id", async (req, res) => {
 // add new client in db
 router.post("/clients", async(req,res)=>{
   try{
-    const client = await new Song(req.body)
+    const client = await new Client(req.body)
     await client.save()
     res.status(201).json(client)
     console.log(client)
@@ -88,7 +88,7 @@ router.delete("/clients/:id", async (req, res) => {
     res.status(200).json({ message: "Client deleted", id: req.params.id });
   } catch (err) {
     console.error("Delete error:", err);
-    res.status(500).json({ message: "Failed to delete song", error: err });
+    res.status(500).json({ message: "Failed to delete Client", error: err });
   }
 });
 
